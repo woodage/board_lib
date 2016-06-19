@@ -4,6 +4,8 @@ USING THE BOARD LIB
 
 #make sure hwlib is working
 
+#include the loader.hpp in your project
+
 getting instance example:
 auto machine = board_lib::machine::control();
 
