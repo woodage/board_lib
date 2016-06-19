@@ -1,0 +1,137 @@
+\hypertarget{classboard__engine}{}\section{board\+\_\+engine Class Reference}
+\label{classboard__engine}\index{board\+\_\+engine@{board\+\_\+engine}}
+
+
+library for controlling playground/board game mechanics.  
+
+
+
+
+{\ttfamily \#include $<$board\+\_\+engine.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classboard__engine_a7b20707f49ad54a783fb1b31173ac938}{board\+\_\+engine} (\hyperlink{classstepmotor}{stepmotor} \&step\+\_\+hor, \hyperlink{classstepmotor}{stepmotor} \&step\+\_\+ver, \hyperlink{classmagnet}{magnet} \&electro\+\_\+magnet)
+\begin{DoxyCompactList}\small\item\em default constructor \end{DoxyCompactList}\item 
+void \hyperlink{classboard__engine_a45fc13a95ffe530fdef54f66f8122374}{up} ()\hypertarget{classboard__engine_a45fc13a95ffe530fdef54f66f8122374}{}\label{classboard__engine_a45fc13a95ffe530fdef54f66f8122374}
+
+\begin{DoxyCompactList}\small\item\em moving function for controlling mechanics \end{DoxyCompactList}\item 
+void {\bfseries down} ()\hypertarget{classboard__engine_ac7be72f5919f83898148bd8ea30142f8}{}\label{classboard__engine_ac7be72f5919f83898148bd8ea30142f8}
+
+\item 
+void {\bfseries left} ()\hypertarget{classboard__engine_ab741c659f4db133d9df480ccab3046ca}{}\label{classboard__engine_ab741c659f4db133d9df480ccab3046ca}
+
+\item 
+void {\bfseries right} ()\hypertarget{classboard__engine_ae8ede3e502c0a52bace0f0faf3d8f049}{}\label{classboard__engine_ae8ede3e502c0a52bace0f0faf3d8f049}
+
+\item 
+void \hyperlink{classboard__engine_ad5e82ee1bd2519f2e2ce1084a1406101}{select\+\_\+piece} ()\hypertarget{classboard__engine_ad5e82ee1bd2519f2e2ce1084a1406101}{}\label{classboard__engine_ad5e82ee1bd2519f2e2ce1084a1406101}
+
+\begin{DoxyCompactList}\small\item\em Grabbing a magnetic piece from the board. \end{DoxyCompactList}\item 
+void \hyperlink{classboard__engine_a78886dc412881896d5146d3ab17f0c78}{release\+\_\+piece} ()\hypertarget{classboard__engine_a78886dc412881896d5146d3ab17f0c78}{}\label{classboard__engine_a78886dc412881896d5146d3ab17f0c78}
+
+\begin{DoxyCompactList}\small\item\em Release a magnetic piece on the board. \end{DoxyCompactList}\item 
+void \hyperlink{classboard__engine_ae35de404be745a7debab47f4ec4066bc}{shift\+\_\+x} (int tiles, bool pos=true, int wait\+\_\+ms=1, int calibrate=270)
+\item 
+void \hyperlink{classboard__engine_a6391f73d6b4ae663d2d3c515bd208a64}{shift\+\_\+y} (int tiles, bool pos=true, int wait\+\_\+ms=1, int calibrate=270)
+\item 
+void \hyperlink{classboard__engine_aea1ba002132d33ed8cf714a411996190}{go\+\_\+to\+\_\+grid} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Go to this position from current position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+library for controlling playground/board game mechanics. 
+
+the main class for controlling the machine/engine 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{board\+\_\+engine@{board\+\_\+engine}!board\+\_\+engine@{board\+\_\+engine}}
+\index{board\+\_\+engine@{board\+\_\+engine}!board\+\_\+engine@{board\+\_\+engine}}
+\subsubsection[{\texorpdfstring{board\+\_\+engine(stepmotor \&step\+\_\+hor, stepmotor \&step\+\_\+ver, magnet \&electro\+\_\+magnet)}{board_engine(stepmotor &step_hor, stepmotor &step_ver, magnet &electro_magnet)}}]{\setlength{\rightskip}{0pt plus 5cm}board\+\_\+engine\+::board\+\_\+engine (
+\begin{DoxyParamCaption}
+\item[{{\bf stepmotor} \&}]{step\+\_\+hor, }
+\item[{{\bf stepmotor} \&}]{step\+\_\+ver, }
+\item[{{\bf magnet} \&}]{electro\+\_\+magnet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classboard__engine_a7b20707f49ad54a783fb1b31173ac938}{}\label{classboard__engine_a7b20707f49ad54a783fb1b31173ac938}
+
+
+default constructor 
+
+set current state on start position 
+
+\subsection{Member Function Documentation}
+\index{board\+\_\+engine@{board\+\_\+engine}!go\+\_\+to\+\_\+grid@{go\+\_\+to\+\_\+grid}}
+\index{go\+\_\+to\+\_\+grid@{go\+\_\+to\+\_\+grid}!board\+\_\+engine@{board\+\_\+engine}}
+\subsubsection[{\texorpdfstring{go\+\_\+to\+\_\+grid(int x, int y)}{go_to_grid(int x, int y)}}]{\setlength{\rightskip}{0pt plus 5cm}void board\+\_\+engine\+::go\+\_\+to\+\_\+grid (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classboard__engine_aea1ba002132d33ed8cf714a411996190}{}\label{classboard__engine_aea1ba002132d33ed8cf714a411996190}
+
+
+Go to this position from current position. 
+
+calculate direction vector
+
+decide direction horizontal
+
+decide direction vertical \index{board\+\_\+engine@{board\+\_\+engine}!shift\+\_\+x@{shift\+\_\+x}}
+\index{shift\+\_\+x@{shift\+\_\+x}!board\+\_\+engine@{board\+\_\+engine}}
+\subsubsection[{\texorpdfstring{shift\+\_\+x(int tiles, bool pos=true, int wait\+\_\+ms=1, int calibrate=270)}{shift_x(int tiles, bool pos=true, int wait_ms=1, int calibrate=270)}}]{\setlength{\rightskip}{0pt plus 5cm}void board\+\_\+engine\+::shift\+\_\+x (
+\begin{DoxyParamCaption}
+\item[{int}]{tiles, }
+\item[{bool}]{pos = {\ttfamily true}, }
+\item[{int}]{wait\+\_\+ms = {\ttfamily 1}, }
+\item[{int}]{calibrate = {\ttfamily 270}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classboard__engine_ae35de404be745a7debab47f4ec4066bc}{}\label{classboard__engine_ae35de404be745a7debab47f4ec4066bc}
+function to move the magnet X amount of tiles. 
+\begin{DoxyParams}{Parameters}
+{\em 1} & \+: amount of tiles \\
+\hline
+{\em 2} & \+: direction (true = right, false = left) \\
+\hline
+{\em 3} & \+: amount of milliseconds to wait after passing 1 tile \\
+\hline
+{\em 4} & \+: calibration variable. Amount of calls needed for engine to pass 1 tile. When using other tiles/distance, Change the (default value) param \\
+\hline
+\end{DoxyParams}
+Count amount of taken step to the current y grid.
+
+Count amount of taken step to the current y grid. \index{board\+\_\+engine@{board\+\_\+engine}!shift\+\_\+y@{shift\+\_\+y}}
+\index{shift\+\_\+y@{shift\+\_\+y}!board\+\_\+engine@{board\+\_\+engine}}
+\subsubsection[{\texorpdfstring{shift\+\_\+y(int tiles, bool pos=true, int wait\+\_\+ms=1, int calibrate=270)}{shift_y(int tiles, bool pos=true, int wait_ms=1, int calibrate=270)}}]{\setlength{\rightskip}{0pt plus 5cm}void board\+\_\+engine\+::shift\+\_\+y (
+\begin{DoxyParamCaption}
+\item[{int}]{tiles, }
+\item[{bool}]{pos = {\ttfamily true}, }
+\item[{int}]{wait\+\_\+ms = {\ttfamily 1}, }
+\item[{int}]{calibrate = {\ttfamily 270}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classboard__engine_a6391f73d6b4ae663d2d3c515bd208a64}{}\label{classboard__engine_a6391f73d6b4ae663d2d3c515bd208a64}
+function to move the magnet X amount of tiles. 
+\begin{DoxyParams}{Parameters}
+{\em 1} & \+: amount of tiles \\
+\hline
+{\em 2} & \+: direction (true = right, false = left) \\
+\hline
+{\em 3} & \+: amount of milliseconds to wait after passing 1 tile \\
+\hline
+{\em 4} & \+: calibration variable. Amount of calls needed for engine to pass 1 tile. When using other tiles/distance, Change the (default value) param \\
+\hline
+\end{DoxyParams}
+Loop amount of tiles
+
+Loop till calibration value. When calibration value reached, position is 1 tile moved.
+
+When boolean is true, \char`\"{}move\char`\"{} forwards.
+
+Wait amount of milliseconds when machine passes 1 tile (according the calibration).
+
+Count amount of taken step to the current y grid. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{board__engine_8hpp}{board\+\_\+engine.\+hpp}\end{DoxyCompactItemize}
